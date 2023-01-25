@@ -1,6 +1,10 @@
 function Info(info){
     return <div>
-        <h2>{info.info}</h2>
+        <a href={info.link}>
+        <h2>{info.info}
+        </h2>
+        </a>
         </div>
+       
 }
 export default Info

@@ -1,8 +1,15 @@
 import Info from "./infoBlock"
 
+
 function MakeHeader() {
     return <header className='navBar'>
-            <Info info="Henry"></Info>
+            <div>
+                <h2>Henry Cryns</h2>
+            </div>
+            <Info info="About Me" link="https://www.google.com"></Info>
+            <Info info="Portfolio"></Info>
+            <Info info="Contact"></Info>
+            <Info info="Resume"></Info>
         </header>
         
 }
