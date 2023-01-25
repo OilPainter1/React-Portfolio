@@ -1,7 +1,16 @@
 .App {
   text-align: center;
 }
+.navBar {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  background-color: greenyellow;
 
+}
+.navBar div {
+  
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
