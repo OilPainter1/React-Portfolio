@@ -1,28 +1,137 @@
 import Info from "./infoBlock"
-function MakeHeader({view,setView}) {
-    console.log(view)
-    if (view === "aboutMe"){
-        
-        return (<header className='navBar'>
-        <div>
-            <h2>Henry Cryns</h2>
-        </div>
-        <Info highlight="btn btn-info" info="About Me"></Info>
-        <Info highlight="btn btn-secondary"info="Portfolio" ></Info>
-        <Info highlight="btn btn-secondary" info="Contact" ></Info>
-        <Info highlight="btn btn-secondary" info="Resume" ></Info>
-    </header>)
-    } else
-    return <header className='navBar'>
+import { useState } from "react"
+function MakeHeader() {
+
+    const[view,setView] = useState("About Me")
+    
+        if (view === "About Me"){
+        return (
+        <header className='navBar'>
             <div>
                 <h2>Henry Cryns</h2>
             </div>
-            <Info info="About Me" ></Info>
-            <Info info="Portfolio"></Info>
-            <Info info="Contact"></Info>
-            <Info info="Resume"></Info>
-        </header>
-        
-}
+            <Info 
+                highlight="btn btn-info" 
+                info="About Me" 
+                view={view}
+                setView={setView}
+                >
+            </Info>
+            <Info 
+                highlight="btn btn-secondary"
+                info="Portfolio" 
+                view={view}
+                setView={setView}>
+                </Info>
+            <Info 
+            highlight="btn btn-secondary" 
+            info="Contact" 
+            view={view}
+            setView={setView}>
+            </Info>
+            <Info 
+            highlight="btn btn-secondary" 
+            info="Resume" 
+            view={view}
+            setView={setView}> 
+            </Info>
+        </header>)
+        } else if (view === "Portfolio"){
+            return (
+                <header className='navBar'>
+                    <div>
+                        <h2>Henry Cryns</h2>
+                    </div>
+                    <Info 
+                        highlight="btn btn-secondary" 
+                        info="About Me" 
+                        view={view}
+                        setView={setView}>
+                    </Info>
+                    <Info 
+                        highlight="btn btn-info"
+                        info="Portfolio" 
+                        view={view}
+                        setView={setView}>
+                        </Info>
+                    <Info 
+                    highlight="btn btn-secondary" 
+                    info="Contact" 
+                    view={view}
+                    setView={setView}>
+                    </Info>
+                    <Info 
+                    highlight="btn btn-secondary" 
+                    info="Resume" 
+                    view={view}
+                    setView={setView}> 
+                    </Info>
+                </header>)
 
+        } else if (view === "Contact"){
+            return (
+                <header className='navBar'>
+                    <div>
+                        <h2>Henry Cryns</h2>
+                    </div>
+                    <Info 
+                        highlight="btn btn-secondary" 
+                        info="About Me" 
+                        view={view}
+                        setView={setView}>
+                    </Info>
+                    <Info 
+                        highlight="btn btn-secondary"
+                        info="Portfolio" 
+                        view={view}
+                        setView={setView}>
+                        </Info>
+                    <Info 
+                    highlight="btn btn-info" 
+                    info="Contact" 
+                    view={view}
+                    setView={setView}>
+                    </Info>
+                    <Info 
+                    highlight="btn btn-secondary" 
+                    info="Resume" 
+                    view={view}
+                    setView={setView}> 
+                    </Info>
+                </header>)
+        } else if (view === "Resume"){
+            return (
+                <header className='navBar'>
+                    <div>
+                        <h2>Henry Cryns</h2>
+                    </div>
+                    <Info 
+                        highlight="btn btn-secondary" 
+                        info="About Me" 
+                        view={view}
+                        setView={setView}>
+                    </Info>
+                    <Info 
+                        highlight="btn btn-secondary"
+                        info="Portfolio" 
+                        view={view}
+                        setView={setView}>
+                        </Info>
+                    <Info 
+                    highlight="btn btn-secondary" 
+                    info="Contact" 
+                    view={view}
+                    setView={setView}>
+                    </Info>
+                    <Info 
+                    highlight="btn btn-info" 
+                    info="Resume" 
+                    view={view}
+                    setView={setView}> 
+                    </Info>
+                </header>)
+        }
+
+    }
+  
 export default MakeHeader
