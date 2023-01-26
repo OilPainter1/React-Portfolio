@@ -6,7 +6,7 @@ function MakeHeader() {
             <div>
                 <h2>Henry Cryns</h2>
             </div>
-            <Info info="About Me" link="https://www.google.com"></Info>
+            <Info info="About Me" ></Info>
             <Info info="Portfolio"></Info>
             <Info info="Contact"></Info>
             <Info info="Resume"></Info>
