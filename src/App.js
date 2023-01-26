@@ -1,21 +1,28 @@
 import MakeHeader from "./components/headerComponent"
 import MakeFooter from "./components/footerComponent";
 import "./App.css"
-import PortfolioBlock from "./components/PortfolioBlock"
+import { useState } from "react";
+import AboutMe from "./views/aboutMe"
+import ContactMe from "./views/contactMe";
 
 function App() {
-  return  <><MakeHeader />
-            <section>
-            <PortfolioBlock 
-            img="../public/logo192.png"
-            alt="test"
-            name="test"
-            link="https://google.com">
-            </PortfolioBlock>
-            </section>
+  const[view,setView] = useState("aboutMe")
+  
 
-            <MakeFooter />
-          </>
+
+  if (view === "aboutMe"){
+    return  <><MakeHeader view={view} setView={setView}/>
+              <AboutMe />
+              <MakeFooter />
+            </>
+  }
+  else if (view === "contactMe"){
+    return <><MakeHeader view={view} setView={setView}/>
+              <ContactMe />
+              <MakeFooter />
+            </>
+  }
+
 
 }
 

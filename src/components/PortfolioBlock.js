@@ -3,7 +3,7 @@ import Info from "./infoBlock"
 function PortfolioBlock(project){
     return <div>
         <div>
-            <img src={project.img} alt={project.alt}>
+            <img href={project.img} src={project.src}alt={project.alt}>
     
             </img>
         </div>
