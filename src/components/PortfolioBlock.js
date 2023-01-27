@@ -1,16 +1,16 @@
-import Info from "./infoBlock"
+import InfoFooter from "./footerBlock"
 
 function PortfolioBlock(project){
-    return <div>
-        <div>
-            <img href={project.img} src={project.src}alt={project.alt}>
+    return <>
+        <div className="container">
+            <img className="img-thumbnail"href={project.img} src={project.src}alt={project.alt}>
     
             </img>
         </div>
         <div>
-            <Info info={project.name} link={project.link}></Info>
+            <InfoFooter info={project.name} link={project.link} highlight="btn btn-primary"></InfoFooter>
         </div>
-    </div>
+    </>
 }
 
 export default PortfolioBlock
