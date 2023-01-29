@@ -1,5 +1,7 @@
 import Info from "./infoBlock"
 import { useState } from "react"
+import Portfolio from "../views/Portfolio"
+import ContactMe from "../views/contactMe"
 function MakeHeader() {
 
     const[view,setView] = useState("About Me")
@@ -38,6 +40,7 @@ function MakeHeader() {
         </header>)
         } else if (view === "Portfolio"){
             return (
+                <>
                 <header className='navBar'>
                     <div>
                         <h2>Henry Cryns</h2>
@@ -55,21 +58,26 @@ function MakeHeader() {
                         setView={setView}>
                         </Info>
                     <Info 
-                    highlight="btn btn-secondary" 
-                    info="Contact" 
-                    view={view}
-                    setView={setView}>
+                        highlight="btn btn-secondary" 
+                        info="Contact" 
+                        view={view}
+                        setView={setView}>
                     </Info>
                     <Info 
-                    highlight="btn btn-secondary" 
-                    info="Resume" 
-                    view={view}
-                    setView={setView}> 
+                        highlight="btn btn-secondary" 
+                        info="Resume" 
+                        view={view}
+                        setView={setView}> 
                     </Info>
-                </header>)
+                </header>
+                <Portfolio></Portfolio>
+                </>
+                )
+
 
         } else if (view === "Contact"){
             return (
+                <>
                 <header className='navBar'>
                     <div>
                         <h2>Henry Cryns</h2>
@@ -98,7 +106,9 @@ function MakeHeader() {
                     view={view}
                     setView={setView}> 
                     </Info>
-                </header>)
+                </header>
+                <ContactMe />
+                </>)
         } else if (view === "Resume"){
             return (
                 <header className='navBar'>
