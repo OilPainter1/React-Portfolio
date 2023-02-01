@@ -2,12 +2,14 @@ import Info from "./infoBlock"
 import { useState } from "react"
 import Portfolio from "../views/Portfolio"
 import ContactMe from "../views/contactMe"
+import AboutMe from "../views/aboutMe"
 function MakeHeader() {
 
     const[view,setView] = useState("About Me")
     
         if (view === "About Me"){
         return (
+        <>
         <header className='navBar'>
             <div>
                 <h2>Henry Cryns</h2>
@@ -37,7 +39,9 @@ function MakeHeader() {
             view={view}
             setView={setView}> 
             </Info>
-        </header>)
+        </header>
+        <AboutMe></AboutMe>
+        </>)
         } else if (view === "Portfolio"){
             return (
                 <>

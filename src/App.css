@@ -8,6 +8,11 @@
   background-color: greenyellow;
 
 }
+.profile-pic{
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 .navBar div{
   padding: 10px;
