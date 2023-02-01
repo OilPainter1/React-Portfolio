@@ -3,9 +3,22 @@ import { useState } from "react"
 import Portfolio from "../views/Portfolio"
 import ContactMe from "../views/contactMe"
 import AboutMe from "../views/aboutMe"
+import Resume from "../views/Resume"
+
+
+
+
+
+
+
+
+
+
 function MakeHeader() {
 
     const[view,setView] = useState("About Me")
+    
+
     
         if (view === "About Me"){
         return (
@@ -114,7 +127,7 @@ function MakeHeader() {
                 <ContactMe />
                 </>)
         } else if (view === "Resume"){
-            return (
+            return (<>
                 <header className='navBar'>
                     <div>
                         <h2>Henry Cryns</h2>
@@ -143,7 +156,9 @@ function MakeHeader() {
                     view={view}
                     setView={setView}> 
                     </Info>
-                </header>)
+                </header>
+                <Resume/>
+                </>)
         }
 
     }
