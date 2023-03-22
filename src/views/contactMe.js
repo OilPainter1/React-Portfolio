@@ -9,7 +9,8 @@ function ContactMe() {
 
 
     return (<div className="container">
-        <a href="mailto:hjcryns@gmail.com">Email me</a>
+        <h4>Email</h4>
+        <p>hjcryns@gmail.com</p>
     </div>)
 
 }

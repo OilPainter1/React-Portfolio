@@ -13,19 +13,21 @@ function Portfolio() {
                 name="Weather Forecast App"
                 github= "See on github"
                 githubURL="https://github.com/OilPainter1/Weather-App"
+                description="Allows users to search a city by name and get the weather for that city at the time of search"
             ></PortfolioBlock>
         </div>
         <div className="col">
             <PortfolioBlock
-                img="../../public"
-                src="firstWebpage.png"
-                link="https://oilpainter1.github.io/Module-2-Challenge/"
-                alt="firstWebpage"
-                name="First Webpage"
-                github="See on github"
-                githubURL="https://github.com/OilPainter1/Module-2-Challenge"
-            ></PortfolioBlock>
-        </div>
+                    img="../../public"
+                    src= "TimerAppScreenshot.png"
+                    link= "https://oilpainter1.github.io/Timer-App/"
+                    alt="Timer"
+                    name="Timer"
+                    github="See on github"
+                    githubURL="https://github.com/OilPainter1/Timer-App"
+                    description="Allows users to set, start, and stop a timer">
+            </PortfolioBlock>
+            </div>
         <div className="col">
             <PortfolioBlock
                 img="../../public"
@@ -34,7 +36,9 @@ function Portfolio() {
                 alt="techBlog"
                 name="techBlog"
                 github="See on github"
-                githubURL="https://github.com/OilPainter1/techBlog">
+                githubURL="https://github.com/OilPainter1/techBlog"
+                description="This was my first full-stack app. A user can sign up and then make posts to their dashboard that persist in a database. The user can then log out and log back in to see their past posts">
+
 
             </PortfolioBlock>
         </div>
@@ -44,26 +48,26 @@ function Portfolio() {
             <div className="col">
                 <PortfolioBlock
                     img="../../public"
-                    src= "body-of-cards.png"
-                    link= "https://krenbot.github.io/body-of-cards/"
-                    alt="techBlog"
-                    name="Body of Cards"
+                    src= "Team-Profile-Generator-Screen-Shot.png"
+                    alt="Team-Profile-Generator"
+                    name="Team Profile Generator"
                     github="See on github"
-                    githubURL="https://github.com/Krenbot/body-of-cards">
+                    githubURL="https://github.com/OilPainter1/Team-Profile-Generator">
 
                 </PortfolioBlock>
             </div>
             <div className="col">
             <PortfolioBlock
-                    img="../../public"
-                    src= "bookNook.png"
-                    link= "https://book-nook.herokuapp.com/login"
-                    alt="bookNook"
-                    name="Book Nook"
-                    github="See on github"
-                    githubURL="https://github.com/Krenbot/book-nook">
-            </PortfolioBlock>
-            </div>
+                img="../../public"
+                src="firstWebpage.png"
+                link="https://oilpainter1.github.io/Module-2-Challenge/"
+                alt="firstWebpage"
+                name="First Webpage"
+                github="See on github"
+                githubURL="https://github.com/OilPainter1/Module-2-Challenge"
+                description="This is the first website about me that I made"
+            ></PortfolioBlock>
+        </div>
             <div className="col">
                 <PortfolioBlock
                     img="../../public"

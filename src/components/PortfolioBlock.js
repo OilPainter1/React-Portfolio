@@ -11,6 +11,7 @@ function PortfolioBlock(project){
         <div className="container">
             <InfoFooter info={project.name} link={project.link} highlight="btn btn-primary"></InfoFooter>
             <InfoFooter info ={project.github} link={project.githubURL} highlight="btn btn-secondary"></InfoFooter>
+            <p>{project.description}</p>
         </div>
     </>
 }
