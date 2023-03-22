@@ -49,7 +49,7 @@ function Portfolio() {
             <div className="col">
                 <PortfolioBlock
                     img="../../public"
-                    src= "Smaller-Team-Generator-Screenshot"
+                    src= "Smaller-Team-Generator-Screenshot.png"
                     alt="Team-Profile-Generator"
                     name="Team Profile Generator"
                     github="See on github"
