@@ -14,6 +14,7 @@ function Portfolio() {
                 github= "See on github"
                 githubURL="https://github.com/OilPainter1/Weather-App"
                 description="Allows users to search a city by name and get the weather for that city at the time of search"
+                technologies="HTML, CSS, JavaScript, Fetch API, Document Object Model (DOM)"
             ></PortfolioBlock>
         </div>
         <div className="col">
@@ -25,7 +26,8 @@ function Portfolio() {
                     name="Timer"
                     github="See on github"
                     githubURL="https://github.com/OilPainter1/Timer-App"
-                    description="Allows users to set, start, and stop a timer">
+                    description="Allows users to set, start, and stop a timer"
+                    technologies="HTML, CSS, JavaScript, jQuery, jQuery UI, Bulma, Moment.js">
             </PortfolioBlock>
             </div>
         <div className="col">
@@ -37,9 +39,8 @@ function Portfolio() {
                 name="techBlog"
                 github="See on github"
                 githubURL="https://github.com/OilPainter1/techBlog"
-                description="This was my first full-stack app. A user can sign up and then make posts to their dashboard that persist in a database. The user can then log out and log back in to see their past posts">
-
-
+                description="This was my first full-stack app. A user can sign up and then make posts to their dashboard that persist in a database. The user can then log out and log back in to see their past posts"
+                technologies="Express.js, handlebars.js, Sequelize">
             </PortfolioBlock>
         </div>
         </div>
@@ -48,11 +49,13 @@ function Portfolio() {
             <div className="col">
                 <PortfolioBlock
                     img="../../public"
-                    src= "Team-Profile-Generator-Screen-Shot.png"
+                    src= "Smaller-Team-Generator-Screenshot"
                     alt="Team-Profile-Generator"
                     name="Team Profile Generator"
                     github="See on github"
-                    githubURL="https://github.com/OilPainter1/Team-Profile-Generator">
+                    githubURL="https://github.com/OilPainter1/Team-Profile-Generator"
+                    description="A command line application that allows a user to input data about employees and then genrates an html page that displays the user input"
+                    technologies="Node.js, npm Inquirer, npm Jest">
 
                 </PortfolioBlock>
             </div>
@@ -66,6 +69,7 @@ function Portfolio() {
                 github="See on github"
                 githubURL="https://github.com/OilPainter1/Module-2-Challenge"
                 description="This is the first website about me that I made"
+                technologies="HTML, CSS"
             ></PortfolioBlock>
         </div>
             <div className="col">
@@ -74,9 +78,9 @@ function Portfolio() {
                     src="employee-cms.png"
                     name="Employee Database CLI"
                     github="See on github"
-                    githubURL="https://github.com/OilPainter1/Employee-Tracker-CMS">
-
-
+                    githubURL="https://github.com/OilPainter1/Employee-Tracker-CMS"
+                    description="A command line program that allows users to add to and read from a database that consists of departments, roles, and employees"
+                    technologies="Node.js, npm Inquirer, MySQL">
                 </PortfolioBlock>
             </div>
         </div>
